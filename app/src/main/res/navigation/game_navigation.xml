@@ -15,6 +15,9 @@
             app:destination="@id/gameFragment"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/actionOpenFragment"
+            app:destination="@id/optionFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -56,4 +59,9 @@
         android:name="com.example.adv160420034week2.ProfileFragment"
         android:label="Profile Screen"
         tools:layout="@layout/fragment_profile" />
+    <dialog
+        android:id="@+id/optionFragment"
+        android:name="com.example.adv160420034week2.OptionFragment"
+        android:label="fragment_option"
+        tools:layout="@layout/fragment_option" />
 </navigation>
